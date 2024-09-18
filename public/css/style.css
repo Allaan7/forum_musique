@@ -5,3 +5,14 @@
 .formInput{
     width: 50%;
 }
+.img404{
+    position: relative;
+}
+.img404 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.img404 img{
+    width: 100%;
+}
