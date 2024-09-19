@@ -29,7 +29,7 @@
           <a class="nav-link active text-light" href="/">Partage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" href="/">Inscription</a>
+          <a class="nav-link active text-light" href="/register">Inscription</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active text-light" href="/">Connexion</a>
