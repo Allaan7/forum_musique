@@ -32,7 +32,10 @@
           <a class="nav-link active text-light" href="/register">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" href="/">Connexion</a>
+          <a class="nav-link active text-light" href="/connection">Connexion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/logout"><i class="fa-solid fa-circle-plus"></i> Deconnexion</a>
         </li>
       </ul>
     </div>
