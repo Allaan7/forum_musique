@@ -37,6 +37,9 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="/logout"><i class="fa-solid fa-circle-plus"></i> Deconnexion</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/users"><i class="fa-solid fa-circle-plus"></i>Utilisateurs</a>
+        </li>
       </ul>
     </div>
   </div>
