@@ -7,7 +7,7 @@
     if(isset($users)){
         foreach($users as $user){
             ?>
-            <a><?= $user['pseudo'] ?></a>
+            <a href="/profile?id=<?= $user['id'] ?>"><?= $user['pseudo'] ?></a>
             <?php
         }
     }
@@ -17,7 +17,7 @@
     if(isset($admins)){
         foreach($admins as $admin){
             ?>
-            <a><?= $admin['pseudo'] ?></a>
+            <a href="/profile?id=<?= $admin['id'] ?>"><?= $admin['pseudo'] ?></a>
             <?php
         }
     }
