@@ -13,6 +13,7 @@ function checkFormat($nameInput, $value){
     global $arrayError;
     $regexName = '/^[a-zA-Zà-üÀ-Ü -]{2,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
+    $regexTitle = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,}$/';
 
     switch ($nameInput) {
         case 'pseudo':
@@ -29,7 +30,17 @@ function checkFormat($nameInput, $value){
             if(!preg_match($regexPassword, $value)){
                 $arrayError['password'] = 'Merci de donné un mot de passe avec au minimum : 8 caractères, 1 majuscule, 1 miniscule, 1 caractère spécial!';
             }
-        break;
+            break;
+        case 'title':
+            if(!preg_match($regexTitle, $value)){
+                $arrayError['title'] = 'Merci de renseigner un titre correcte!';
+            }
+            break;
+        case 'description':
+            if(!preg_match($regexTitle, $value)){
+                $arrayError['description'] = 'Merci de renseigner une description correcte!';
+            }
+            break;
     }
 }
 
