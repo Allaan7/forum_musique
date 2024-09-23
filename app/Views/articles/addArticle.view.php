@@ -19,6 +19,12 @@
             <?php if (isset($arrayError['content'])) {
 				?>
 					<p class='text-danger'><?= $arrayError['content'] ?></p>
+                    <div>
+                    <label for="avatar">Choose a profile picture:</label>
+
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+
+                    </div>
 				<?php
             } ?>
         </div>

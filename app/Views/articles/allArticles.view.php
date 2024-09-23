@@ -2,7 +2,9 @@
     require_once(__DIR__ . "/../partials/head.php");
 ?>
     <h1>Les articles</h1>
-    <a href="/addArticle?subject=<?= $subject ?>" class="btn colorGreen">Ajouter un article</a>
+    <div class="btnCenter">
+        <a href="/addArticle?subject=<?= $subject ?>" class="btn colorButton">Ajouter un article</a>
+    </div>
     <div class="col-8 mx-auto d-block mt-5">
         <?php
         if(isset($articles)){
@@ -23,7 +25,7 @@
            
                 <div class="card-body">
                     <p class="card-text"><?= $article['pseudo'] ?></p>
-                    <a href="/article?id=<?= $article['id'] ?>" class="btn colorPink">Aller voir l'article</a>
+                    <a href="/article?id=<?= $article['id'] ?>" class="btn colorButton">Aller voir l'article</a>
                 </div>
             </div>
             <?php

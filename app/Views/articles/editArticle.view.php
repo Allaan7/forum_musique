@@ -19,6 +19,11 @@
             <?php if (isset($arrayError['content'])) {
 				?>
 					<p class='text-danger'><?= $arrayError['content'] ?></p>
+                    <div>
+                        <label for="sampleFile"></label>
+                        <input type="file" id="sampleFile" name="sampleFile" accept="image/png, image/jpeg" />
+                    </div>
+
 				<?php
             } ?>
         </div>

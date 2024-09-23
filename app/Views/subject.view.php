@@ -23,7 +23,7 @@
             } ?>
         </div>
         
-        <button type="submit" class="btn colorPurpel mt-3">Ajout du sujet</button>
+        <button type="submit" class="btn colorButton mt-3">Ajout du sujet</button>
     </div>
 </form>
 <?php

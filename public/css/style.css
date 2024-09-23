@@ -113,3 +113,27 @@ form {
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
 }
+
+.colorButton{
+  color: #ffffffcc;
+  background-color: #131313;
+  border-radius: 5px;
+}
+.colorButton:hover{
+  background-color: #1d1d1d5e;
+}
+
+.colorButtonSupp{
+  color: #000000cc;
+  background-color: #ac0000;
+  border-radius: 5px;
+}
+.colorButtonSupp:hover{
+  background-color: rgba(29, 29, 29, 0.308)
+}
+.btnCenter{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  margin: auto;
+}

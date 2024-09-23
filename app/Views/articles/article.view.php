@@ -15,14 +15,14 @@
 <?php
     if($_SESSION['user']['idUser'] == $article['user_id']){
 ?>
-    <a href="/editArticle?id=<?= $article['id'] ?>" class="btn colorYellow">Modifier</a> 
+    <a href="/editArticle?id=<?= $article['id'] ?>" class="btn colorButton">Modifier</a> 
 <?php
 }
 if($_SESSION['user']['idUser'] == $article['user_id'] || $_SESSION['user']['role'] == "Admin"){
     ?>
          <form action="" method="POST">
             <input type="hidden" id="idDelete" name="idDelete" value="<?= $article['id'] ?>">
-            <button type="submit" class="btn colorRed">Supprimer</button>
+            <button type="submit" class="btn colorButtonSupp">Supprimer</button>
         </form>
     <?php
 }
