@@ -5,7 +5,7 @@
             <h1>Bienvenue <?= $_SESSION['user']['pseudo'] ?></h1>
         <?php
         if($subjects){
-            foreach($subjects as $subject)
+            foreach($subjects as $subject){
             ?>
             <div class="card">
                 <div class="card-header bg-dark">
@@ -15,10 +15,11 @@
            
             <div class="card-body">
                 <p class="card-text"><?= $subject['description'] ?></p>
-                <a href="#" class="btn btn-dark">Aller voir le sujet</a>
+                <a href="/articles?id=<?= $subject['id'] ?>" class="btn btn-dark">Aller voir le sujet</a>
             </div>
             </div>
             <?php
+            }
         }
     }else {
 ?>
