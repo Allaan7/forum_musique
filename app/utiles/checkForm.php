@@ -14,6 +14,7 @@ function checkFormat($nameInput, $value){
     $regexName = '/^[a-zA-Zà-üÀ-Ü -]{2,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
     $regexTitle = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,255}$/';
+    $regexContent = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,}$/';
 
     switch ($nameInput) {
         case 'pseudo':
@@ -39,6 +40,11 @@ function checkFormat($nameInput, $value){
         case 'description':
             if(!preg_match($regexTitle, $value)){
                 $arrayError['description'] = 'Merci de renseigner une description correcte!';
+            }
+            break;
+        case 'content':
+            if(!preg_match($regexContent, $value)){
+                $arrayError['content'] = 'Merci de renseigner un contenu correcte!';
             }
             break;
     }

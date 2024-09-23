@@ -2,6 +2,7 @@
     require_once(__DIR__ . "/../partials/head.php");
 ?>
     <h1>Les articles</h1>
+    <a href="/addArticle?subject=<?= $subject ?>" class="btn colorGreen">Ajouter un article</a>
     <div class="col-8 mx-auto d-block mt-5">
         <?php
         if(isset($articles)){
