@@ -17,7 +17,9 @@ $routes = [
     '/logout' => 'LogoutController.php',
     '/users' => 'UsersController.php',
     '/profile' => 'UserProfileController.php',
-    '/subject' => 'SubjectController.php'
+    '/subject' => 'SubjectController.php',
+    '/articles' => 'AllArticlesController.php',
+    '/article' => 'ArticleController.php'
 
 ];
 

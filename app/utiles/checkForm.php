@@ -13,7 +13,7 @@ function checkFormat($nameInput, $value){
     global $arrayError;
     $regexName = '/^[a-zA-Zà-üÀ-Ü -]{2,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
-    $regexTitle = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,}$/';
+    $regexTitle = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,255}$/';
 
     switch ($nameInput) {
         case 'pseudo':
